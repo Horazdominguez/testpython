@@ -15,13 +15,19 @@ print(matriz[4])
 pos=0
 e=0
 f=0
-if matriz[0][0] < matriz[0][1]:
-    pos= pos +1
-    if matriz[0][1] < matriz[0][2]:
-        pos= pos +1
-        if matriz[0][2] < matriz[0][3]:
-            pos= pos +1
-            print("Hay una secuencia que comienza en: ",e)
-            print("Y finaliza en la posicion: ",pos)
-            print("De la fila: ",f)
+
+for i in range(5):
+	if matriz[i][0] < matriz[i][1]:
+		pos= 0
+		e=0
+		f=0
+		pos= pos +1
+		if matriz[i][1] < matriz[i][2]:
+			pos= pos +1
+			if matriz[i][2] < matriz[i][3]:
+				pos= pos +1
+				print("Buscamos secuencias Horizontales")
+				print("Hay una secuencia que comienza en: ",e+1)
+				print("Y finaliza en la posicion: ",pos+1)
+				print("De la fila: ",i+1)
     
